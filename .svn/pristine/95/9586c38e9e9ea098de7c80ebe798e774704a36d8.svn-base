@@ -1,0 +1,264 @@
+(function() {
+	var giftcardApp = angular.module('giftcardApp', ['ngRoute']);
+
+	giftcardApp.config(['$routeProvider',
+		function($routeProvider) {
+			$routeProvider.
+			when('/:company_url', {
+				templateUrl: 'partials/main.html',
+				controller: 'mainCtrl'
+			}).
+			// when('/not_fnd', {
+			// 	templateUrl: 'partials/page_not_found.html'
+			// }).
+			otherwise({
+				// template : "hey? what are u looking for?"	//??
+				templateUrl: 'partials/page_not_found.html'
+			});
+		}
+	]);
+
+	// giftcardApp.controller('mainCtrl', ['$scope', function ($scope) {
+	// 	var mCtrl = this;
+	// 	// 0 : nothing, 1 : main page, 404 : not found page
+	// 	$scope.viewMode = 0;	// show nothing
+		
+	// 	$scope.setViewMode = function(viewMode) {
+	// 		$scope.viewMode = (_.isUndefined(viewMode)?0:viewMode);
+	// 		console.log("viewmode changed : " + $scope.viewmode);
+	// 	};
+
+	// 	$scope.isViewMode = function(viewMode) {
+	// 		console.log(viewMode);
+	// 		return $scope.viewMode === viewMode;
+	// 	}
+	// }]);
+})();
+
+// function setCookie(c_name,value,exdays) {
+// 	var exdate=new Date();
+// 	exdate.setDate(exdate.getDate() + exdays);
+// 	var strVal = (typeof value == "string"?escape(value) : escape(JSON.stringify(value)));
+// 	var c_value=strVal + ((exdays == undefined || exdays==null) ? "" : "; expires="+exdate.toUTCString());
+// 	document.cookie=c_name + "=" + c_value;
+// }
+
+// function getCookie(c_name) {
+// 	var i,x,y,ARRcookies=document.cookie.split(";");
+// 	for (i=0;i<ARRcookies.length;i++) {
+// 		x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+// 		y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+// 		x=x.replace(/^\s+|\s+$/g,"");
+// 		if (x==c_name) {
+// 			var val = undefined;
+// 			try {
+// 				val = JSON.parse(unescape(y));
+// 			} catch(e) {
+// 				val = unescape(y);
+// 			}
+// 			return val;
+// 		}
+// 	}
+// }
+
+// function resetCookie() {
+//     var cookies = document.cookie.split(";");
+
+//     for (var i = 0; i < cookies.length; i++) {
+//     	var cookie = cookies[i];
+//     	var eqPos = cookie.indexOf("=");
+//     	var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+//     	document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+//     }
+// }
+
+// function setLocalStorage(c_name,value) {
+// 	try {
+// 		var strVal = (typeof value == "string"?escape(value) : escape(JSON.stringify(value)));
+// 		localStorage[c_name] = strVal;
+// 	} catch(e) {
+// 		console.log(e);
+// 	}
+// }
+
+// function getLocalStorage(c_name) {
+// 	try {
+// 		var tmpStr = localStorage[c_name];
+// 		if(!_.isUndefined(tmpStr)) {
+// 			try {
+// 				val = JSON.parse(unescape(tmpStr));
+// 			} catch(e) {
+// 				val = unescape(tmpStr);
+// 			}
+// 			return val;
+// 		} else {
+// 			return tmpStr;
+// 		}
+// 	} catch(e) {
+// 		console.log(e);
+// 		return undefined;
+// 	}
+// }
+
+// function resetLocalStorage() {
+//     try {
+//     	localStorage.clear();
+//     } catch(e) {
+//     	console.log(e);
+// 	}
+// }
+
+// var indexRouter = 
+// 	general_router.extend(
+// 	{	
+// 		routes: {
+// 			":company_name":"setup",
+// 			"*default":"page_not_found"
+// 		},
+// 		setup : function(company_name) {
+// 			var router = this;
+// 			// router.databaseRootURL = "http://www.dealscc.com";
+// 			router.databaseRootURL = "http://www.rt7v2.com";
+
+// 			router.util = {
+// 				createCORPSRequest : function(method, url) {
+// 					var xhr = new XMLHttpRequest();
+// 					if ("withCredentials" in xhr) {
+
+// 					// Check if the XMLHttpRequest object has a "withCredentials" property.
+// 					// "withCredentials" only exists on XMLHTTPRequest2 objects.
+// 					xhr.open(method, url, true);
+
+// 					} else if (typeof XDomainRequest != "undefined") {
+
+// 					// Otherwise, check if XDomainRequest.
+// 					// XDomainRequest only exists in IE, and is IE's way of making CORS requests.
+// 					xhr = new XDomainRequest();
+// 					xhr.open(method, url);
+
+// 					} else {
+
+// 					// Otherwise, CORS is not supported by the browser.
+// 					xhr = null;
+
+// 					}
+// 					return xhr;
+// 				},
+// 				fetchVoucherDoc : function(comid, cardid) {
+// 					var util = this;
+// 					return function(callback) {
+
+// 						var tmpURL = router.databaseRootURL + "/vouchers_rt7/_design/app/_view/company_id_voucher_id_doc_id?key=[\"" + comid + "\",\"" + cardid + "\"]&include_docs=true";
+// 						$.get(tmpURL, function(data, status) {
+// 							if(status == "success") {
+// 								console.log(arguments);
+// 								var rows = data.rows;
+// 								if(rows.length>0) {
+// 				      				var tDoc = (_.first(rows)).doc;
+// 				      				callback(undefined, tDoc);
+// 				      			} else {
+// 				      				callback(undefined, undefined);	
+// 				      			}
+// 							} else {
+// 								console.log(arguments);
+// 								callback(true, data);
+// 							}
+// 						}, "jsonp");
+						
+// 					};
+// 				},
+// 				checkAlphaNumeric : function(input) {
+// 				    return /^[a-z0-9_]+$/i.test(input);
+// 				},
+// 				imageExists : function(image_url) {
+// 					var http = new XMLHttpRequest();
+
+// 				    http.open('HEAD', image_url, false);
+// 				    http.send();
+
+// 				    return http.status != 404;
+// 				}
+// 			};
+
+
+// 			if(_.isUndefined(company_name) || _.str.trim(company_name) == "") {
+// 				var htmlTMP = ich.page_not_found_TMP();
+// 				$("#main").html(htmlTMP);
+// 				// document.body.innerHTML = "<h1>Page Not Found.</h1>";
+// 			} 
+
+// 			var tmpURL = router.databaseRootURL + "/rt7_giftcard_company/_design/app/_view/name?key=\"" + company_name + "\"";
+
+// 			$.get(tmpURL, function(resp, status) {
+// 				if(status == "success") {
+// 					console.log(arguments);
+// 					if(resp.rows.length>0) {
+// 						var firstMatch = _.first(resp.rows);
+// 						var company_id = firstMatch.id;
+// 						var company_name_display = firstMatch.value;
+						
+// 						var logo_path = company_name + ".png";
+// 						var isImageExist = router.util.imageExists("images/" + logo_path);
+// 						logo_path = isImageExist?logo_path:"rt7_logo.png";
+
+// 						var htmlTMP = ich.main_page_TMP({company_name:company_name_display, logo_path: logo_path});
+// 						$("#main").html(htmlTMP);
+
+// 						document.title = company_name_display + " GiftCard";
+// 						$("#lblCompany").text(company_name_display);
+// 						$("#btnSearch").click(function() {
+// 							var cardNum = _.str.trim($("#txtCardNum").val());
+// 							if(_.isEmpty(cardNum)) return ;
+
+// 							var numVal = Number(cardNum);
+// 							if(_.isNaN(numVal)) {
+// 								alert("Invalid Card Format");
+// 							} else {
+// 								var htmlTMP = ich.wait_TMP();
+// 								$("#divResult").html(htmlTMP);
+
+// 								router.util.fetchVoucherDoc(company_id, cardNum)
+// 								(function(err, doc) {
+// 									if(!err && !_.isUndefined(doc)) {
+// 										var voucher_balance = _.isUndefined(doc.voucher_balance)?"0":doc.voucher_balance;
+// 										var formattedBal = currency_format(Number(voucher_balance));
+// 										$("#divResult").html("Your Card Balance : $ " + formattedBal);
+// 									} else {
+// 										// error or not found
+// 										$("#divResult").html("Card Not Found.");
+// 									}
+// 								});
+// 							}
+// 						});
+// 						$("#txtCardNum").keyup(function(event){
+// 					  		if(event.keyCode == 13){
+// 						    	$("#btnSearch").click();
+// 						  	} else {
+// 						  		$("#divResult").html("");
+// 						  	}
+// 						});
+// 					} else {
+// 						var htmlTMP = ich.page_not_found_TMP();
+// 						$("#main").html(htmlTMP);
+// 					}
+// 				} else {
+// 					console.log(arguments);
+// 					var htmlTMP = ich.page_not_found_TMP();
+// 					$("#main").html(htmlTMP);
+// 				}
+// 			}, "jsonp");
+
+
+	      	
+
+
+// 		},
+// 		page_not_found : function() {
+// 			var htmlTMP = ich.page_not_found_TMP();
+// 			$("#main").html(htmlTMP);
+// 		}
+// 	});
+// new indexRouter({
+// 	title : "GiftCard App"
+// });
+

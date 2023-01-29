@@ -1,0 +1,201 @@
+2015-03-04 13:11:28,558 - INFO - set sender email account. please, check -h
+2015-03-04 13:11:32,396 - INFO - set sender email account. please, check -h
+2015-03-04 13:12:18,670 - INFO - set sender email account. please, check -h
+2015-03-04 13:19:29,510 - INFO - set sender email account. please, check -h
+2015-03-04 13:19:55,850 - INFO - set sender email account. please, check -h
+2015-03-04 13:19:59,607 - INFO - set sender email account. please, check -h
+2015-03-04 13:20:22,583 - INFO - set sender email account. please, check -h
+2015-03-04 13:21:32,742 - INFO - set sender email account. please, check -h
+2015-03-04 13:22:31,760 - INFO - set sender email account. please, check -h
+2015-03-04 13:22:39,937 - INFO - set sender email account. please, check -h
+2015-06-11 13:20:15,556 - INFO - CouchDB listner and publisher worker excuted
+2015-11-13 14:23:31,867 - INFO - =========== httpClient without cridential
+2015-11-13 14:23:32,226 - INFO - CouchDB listner and publisher worker excuted
+2015-12-18 15:48:50,670 - INFO - CouchDB listner and publisher worker excuted
+2015-12-18 15:48:51,999 - INFO - java.net.ConnectException: Connection refused: connect
+2015-12-18 15:48:52,001 - INFO - 	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+2015-12-18 15:48:52,003 - INFO - 	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+2015-12-18 15:48:52,004 - INFO - 	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+2015-12-18 15:48:52,006 - INFO - 	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+2015-12-18 15:48:52,007 - INFO - 	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+2015-12-18 15:48:52,008 - INFO - 	at java.net.PlainSocketImpl.connect(Unknown Source)
+2015-12-18 15:48:52,009 - INFO - 	at java.net.SocksSocketImpl.connect(Unknown Source)
+2015-12-18 15:48:52,011 - INFO - 	at java.net.Socket.connect(Unknown Source)
+2015-12-18 15:48:52,012 - INFO - 	at com.rabbitmq.client.impl.FrameHandlerFactory.create(FrameHandlerFactory.java:32)
+2015-12-18 15:48:52,015 - INFO - 	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:615)
+2015-12-18 15:48:52,016 - INFO - 	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:639)
+2015-12-18 15:48:52,018 - INFO - 	at com.yblee.mqcouch.control.RabbitMQConsumerControl$RabbitMQConsumerWorker.initRabbitMQCannel(RabbitMQConsumerControl.java:59)
+2015-12-18 15:48:52,020 - INFO - 	at com.yblee.mqcouch.control.RabbitMQConsumerControl$RabbitMQConsumerWorker.<init>(RabbitMQConsumerControl.java:40)
+2015-12-18 15:48:52,022 - INFO - 	at com.yblee.mqcouch.control.RabbitMQConsumerControl.startRabbitMQConsumer(RabbitMQConsumerControl.java:26)
+2015-12-18 15:48:52,024 - INFO - 	at com.yblee.mqcouch.control.AppControl.<init>(AppControl.java:36)
+2015-12-18 15:48:52,026 - INFO - 	at com.yblee.mqcouch.index.MqCouchEmailApp.startApp(MqCouchEmailApp.java:83)
+2015-12-18 15:48:52,029 - INFO - 	at com.yblee.mqcouch.index.MqCouchEmailApp.access$3(MqCouchEmailApp.java:77)
+2015-12-18 15:48:52,030 - INFO - 	at com.yblee.mqcouch.index.MqCouchEmailApp$1$1.run(MqCouchEmailApp.java:59)
+2015-12-18 15:48:52,032 - INFO - 	at java.awt.event.InvocationEvent.dispatch(Unknown Source)
+2015-12-18 15:48:52,033 - INFO - 	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+2015-12-18 15:48:52,034 - INFO - 	at java.awt.EventQueue.access$500(Unknown Source)
+2015-12-18 15:48:52,036 - INFO - 	at java.awt.EventQueue$3.run(Unknown Source)
+2015-12-18 15:48:52,037 - INFO - 	at java.awt.EventQueue$3.run(Unknown Source)
+2015-12-18 15:48:52,038 - INFO - 	at java.security.AccessController.doPrivileged(Native Method)
+2015-12-18 15:48:52,039 - INFO - 	at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
+2015-12-18 15:48:52,040 - INFO - 	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+2015-12-18 15:48:52,042 - INFO - 	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+2015-12-18 15:48:52,044 - INFO - 	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+2015-12-18 15:48:52,045 - INFO - 	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+2015-12-18 15:48:52,046 - INFO - 	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+2015-12-18 15:48:52,047 - INFO - 	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+2015-12-18 15:48:52,048 - INFO - 	at java.awt.EventDispatchThread.run(Unknown Source)
+2015-12-18 15:48:52,048 - INFO - rabbit mq channel create fail
+2015-12-18 15:51:50,825 - INFO - =========== httpClient without cridential
+2015-12-18 15:51:51,140 - INFO - CouchDB listner and publisher worker excuted
+2015-12-18 15:51:52,192 - INFO - java.net.ConnectException: Connection refused: connect
+2015-12-18 15:51:52,193 - INFO - 	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+2015-12-18 15:51:52,193 - INFO - 	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+2015-12-18 15:51:52,193 - INFO - 	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+2015-12-18 15:51:52,193 - INFO - 	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+2015-12-18 15:51:52,194 - INFO - 	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+2015-12-18 15:51:52,194 - INFO - 	at java.net.PlainSocketImpl.connect(Unknown Source)
+2015-12-18 15:51:52,194 - INFO - 	at java.net.SocksSocketImpl.connect(Unknown Source)
+2015-12-18 15:51:52,194 - INFO - 	at java.net.Socket.connect(Unknown Source)
+2015-12-18 15:51:52,194 - INFO - 	at com.rabbitmq.client.impl.FrameHandlerFactory.create(FrameHandlerFactory.java:32)
+2015-12-18 15:51:52,194 - INFO - 	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:615)
+2015-12-18 15:51:52,194 - INFO - 	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:639)
+2015-12-18 15:51:52,194 - INFO - 	at com.yblee.mqcouch.control.RabbitMQConsumerControl$RabbitMQConsumerWorker.initRabbitMQCannel(RabbitMQConsumerControl.java:59)
+2015-12-18 15:51:52,194 - INFO - 	at com.yblee.mqcouch.control.RabbitMQConsumerControl$RabbitMQConsumerWorker.<init>(RabbitMQConsumerControl.java:40)
+2015-12-18 15:51:52,196 - INFO - 	at com.yblee.mqcouch.control.RabbitMQConsumerControl.startRabbitMQConsumer(RabbitMQConsumerControl.java:26)
+2015-12-18 15:51:52,196 - INFO - 	at com.yblee.mqcouch.control.AppControl.<init>(AppControl.java:36)
+2015-12-18 15:51:52,196 - INFO - 	at com.yblee.mqcouch.index.MqCouchEmailApp.startApp(MqCouchEmailApp.java:89)
+2015-12-18 15:51:52,196 - INFO - 	at com.yblee.mqcouch.index.MqCouchEmailApp.access$3(MqCouchEmailApp.java:83)
+2015-12-18 15:51:52,197 - INFO - 	at com.yblee.mqcouch.index.MqCouchEmailApp$1$1.run(MqCouchEmailApp.java:65)
+2015-12-18 15:51:52,197 - INFO - 	at java.awt.event.InvocationEvent.dispatch(Unknown Source)
+2015-12-18 15:51:52,197 - INFO - 	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+2015-12-18 15:51:52,197 - INFO - 	at java.awt.EventQueue.access$500(Unknown Source)
+2015-12-18 15:51:52,197 - INFO - 	at java.awt.EventQueue$3.run(Unknown Source)
+2015-12-18 15:51:52,197 - INFO - 	at java.awt.EventQueue$3.run(Unknown Source)
+2015-12-18 15:51:52,197 - INFO - 	at java.security.AccessController.doPrivileged(Native Method)
+2015-12-18 15:51:52,197 - INFO - 	at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
+2015-12-18 15:51:52,197 - INFO - 	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+2015-12-18 15:51:52,198 - INFO - 	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+2015-12-18 15:51:52,198 - INFO - 	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+2015-12-18 15:51:52,198 - INFO - 	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+2015-12-18 15:51:52,198 - INFO - 	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+2015-12-18 15:51:52,198 - INFO - 	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+2015-12-18 15:51:52,198 - INFO - 	at java.awt.EventDispatchThread.run(Unknown Source)
+2015-12-18 15:51:52,198 - INFO - rabbit mq channel create fail
+2015-12-18 15:51:56,525 - INFO - =========== httpClient without cridential
+2015-12-18 15:51:56,776 - INFO - CouchDB listner and publisher worker excuted
+2015-12-18 15:51:57,799 - INFO - java.net.ConnectException: Connection refused: connect
+2015-12-18 15:51:57,800 - INFO - 	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+2015-12-18 15:51:57,800 - INFO - 	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+2015-12-18 15:51:57,800 - INFO - 	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+2015-12-18 15:51:57,800 - INFO - 	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+2015-12-18 15:51:57,800 - INFO - 	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+2015-12-18 15:51:57,800 - INFO - 	at java.net.PlainSocketImpl.connect(Unknown Source)
+2015-12-18 15:51:57,800 - INFO - 	at java.net.SocksSocketImpl.connect(Unknown Source)
+2015-12-18 15:51:57,800 - INFO - 	at java.net.Socket.connect(Unknown Source)
+2015-12-18 15:51:57,801 - INFO - 	at com.rabbitmq.client.impl.FrameHandlerFactory.create(FrameHandlerFactory.java:32)
+2015-12-18 15:51:57,801 - INFO - 	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:615)
+2015-12-18 15:51:57,801 - INFO - 	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:639)
+2015-12-18 15:51:57,801 - INFO - 	at com.yblee.mqcouch.control.RabbitMQConsumerControl$RabbitMQConsumerWorker.initRabbitMQCannel(RabbitMQConsumerControl.java:59)
+2015-12-18 15:51:57,801 - INFO - 	at com.yblee.mqcouch.control.RabbitMQConsumerControl$RabbitMQConsumerWorker.<init>(RabbitMQConsumerControl.java:40)
+2015-12-18 15:51:57,801 - INFO - 	at com.yblee.mqcouch.control.RabbitMQConsumerControl.startRabbitMQConsumer(RabbitMQConsumerControl.java:26)
+2015-12-18 15:51:57,801 - INFO - 	at com.yblee.mqcouch.control.AppControl.<init>(AppControl.java:36)
+2015-12-18 15:51:57,801 - INFO - 	at com.yblee.mqcouch.index.MqCouchEmailApp.startApp(MqCouchEmailApp.java:89)
+2015-12-18 15:51:57,802 - INFO - 	at com.yblee.mqcouch.index.MqCouchEmailApp.access$3(MqCouchEmailApp.java:83)
+2015-12-18 15:51:57,802 - INFO - 	at com.yblee.mqcouch.index.MqCouchEmailApp$1$1.run(MqCouchEmailApp.java:65)
+2015-12-18 15:51:57,802 - INFO - 	at java.awt.event.InvocationEvent.dispatch(Unknown Source)
+2015-12-18 15:51:57,802 - INFO - 	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+2015-12-18 15:51:57,802 - INFO - 	at java.awt.EventQueue.access$500(Unknown Source)
+2015-12-18 15:51:57,802 - INFO - 	at java.awt.EventQueue$3.run(Unknown Source)
+2015-12-18 15:51:57,802 - INFO - 	at java.awt.EventQueue$3.run(Unknown Source)
+2015-12-18 15:51:57,802 - INFO - 	at java.security.AccessController.doPrivileged(Native Method)
+2015-12-18 15:51:57,802 - INFO - 	at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
+2015-12-18 15:51:57,802 - INFO - 	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+2015-12-18 15:51:57,803 - INFO - 	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+2015-12-18 15:51:57,803 - INFO - 	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+2015-12-18 15:51:57,803 - INFO - 	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+2015-12-18 15:51:57,803 - INFO - 	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+2015-12-18 15:51:57,803 - INFO - 	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+2015-12-18 15:51:57,803 - INFO - 	at java.awt.EventDispatchThread.run(Unknown Source)
+2015-12-18 15:51:57,803 - INFO - rabbit mq channel create fail
+2016-07-28 15:20:33,694 - INFO - =========== httpClient without cridential
+2016-08-04 16:49:51,555 - INFO - =========== httpClient without cridential
+2016-08-04 16:49:51,943 - INFO - CouchDB listner and publisher worker excuted
+2016-08-04 16:49:52,978 - INFO - java.net.ConnectException: Connection refused: connect
+2016-08-04 16:49:52,978 - INFO - 	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+2016-08-04 16:49:52,979 - INFO - 	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+2016-08-04 16:49:52,979 - INFO - 	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+2016-08-04 16:49:52,979 - INFO - 	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+2016-08-04 16:49:52,979 - INFO - 	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+2016-08-04 16:49:52,979 - INFO - 	at java.net.PlainSocketImpl.connect(Unknown Source)
+2016-08-04 16:49:52,979 - INFO - 	at java.net.SocksSocketImpl.connect(Unknown Source)
+2016-08-04 16:49:52,979 - INFO - 	at java.net.Socket.connect(Unknown Source)
+2016-08-04 16:49:52,979 - INFO - 	at com.rabbitmq.client.impl.FrameHandlerFactory.create(FrameHandlerFactory.java:32)
+2016-08-04 16:49:52,979 - INFO - 	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:615)
+2016-08-04 16:49:52,979 - INFO - 	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:639)
+2016-08-04 16:49:52,979 - INFO - 	at com.yblee.mqcouch.control.RabbitMQConsumerControl$RabbitMQConsumerWorker.initRabbitMQCannel(RabbitMQConsumerControl.java:59)
+2016-08-04 16:49:52,979 - INFO - 	at com.yblee.mqcouch.control.RabbitMQConsumerControl$RabbitMQConsumerWorker.<init>(RabbitMQConsumerControl.java:40)
+2016-08-04 16:49:52,979 - INFO - 	at com.yblee.mqcouch.control.RabbitMQConsumerControl.startRabbitMQConsumer(RabbitMQConsumerControl.java:26)
+2016-08-04 16:49:52,979 - INFO - 	at com.yblee.mqcouch.control.AppControl.<init>(AppControl.java:36)
+2016-08-04 16:49:52,979 - INFO - 	at com.yblee.mqcouch.index.MqCouchEmailApp.startApp(MqCouchEmailApp.java:83)
+2016-08-04 16:49:52,979 - INFO - 	at com.yblee.mqcouch.index.MqCouchEmailApp.access$3(MqCouchEmailApp.java:77)
+2016-08-04 16:49:52,979 - INFO - 	at com.yblee.mqcouch.index.MqCouchEmailApp$1$1.run(MqCouchEmailApp.java:59)
+2016-08-04 16:49:52,979 - INFO - 	at java.awt.event.InvocationEvent.dispatch(Unknown Source)
+2016-08-04 16:49:52,979 - INFO - 	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+2016-08-04 16:49:52,979 - INFO - 	at java.awt.EventQueue.access$500(Unknown Source)
+2016-08-04 16:49:52,980 - INFO - 	at java.awt.EventQueue$3.run(Unknown Source)
+2016-08-04 16:49:52,980 - INFO - 	at java.awt.EventQueue$3.run(Unknown Source)
+2016-08-04 16:49:52,980 - INFO - 	at java.security.AccessController.doPrivileged(Native Method)
+2016-08-04 16:49:52,980 - INFO - 	at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
+2016-08-04 16:49:52,980 - INFO - 	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+2016-08-04 16:49:52,980 - INFO - 	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+2016-08-04 16:49:52,980 - INFO - 	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+2016-08-04 16:49:52,980 - INFO - 	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+2016-08-04 16:49:52,980 - INFO - 	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+2016-08-04 16:49:52,980 - INFO - 	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+2016-08-04 16:49:52,980 - INFO - 	at java.awt.EventDispatchThread.run(Unknown Source)
+2016-08-04 16:49:52,980 - INFO - rabbit mq channel create fail
+2016-08-05 10:00:32,724 - INFO - =========== httpClient without cridential
+2016-08-05 10:00:33,215 - INFO - CouchDB listner and publisher worker excuted
+2016-08-11 10:45:20,192 - INFO - =========== httpClient without cridential
+2016-08-11 10:45:20,601 - INFO - CouchDB listner and publisher worker excuted
+2016-08-11 10:45:21,686 - INFO - java.net.ConnectException: Connection refused: connect
+2016-08-11 10:45:21,686 - INFO - 	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+2016-08-11 10:45:21,686 - INFO - 	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+2016-08-11 10:45:21,686 - INFO - 	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+2016-08-11 10:45:21,686 - INFO - 	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+2016-08-11 10:45:21,686 - INFO - 	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+2016-08-11 10:45:21,686 - INFO - 	at java.net.PlainSocketImpl.connect(Unknown Source)
+2016-08-11 10:45:21,687 - INFO - 	at java.net.SocksSocketImpl.connect(Unknown Source)
+2016-08-11 10:45:21,687 - INFO - 	at java.net.Socket.connect(Unknown Source)
+2016-08-11 10:45:21,687 - INFO - 	at com.rabbitmq.client.impl.FrameHandlerFactory.create(FrameHandlerFactory.java:32)
+2016-08-11 10:45:21,688 - INFO - 	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:615)
+2016-08-11 10:45:21,688 - INFO - 	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:639)
+2016-08-11 10:45:21,688 - INFO - 	at com.yblee.mqcouch.control.RabbitMQConsumerControl$RabbitMQConsumerWorker.initRabbitMQCannel(RabbitMQConsumerControl.java:59)
+2016-08-11 10:45:21,688 - INFO - 	at com.yblee.mqcouch.control.RabbitMQConsumerControl$RabbitMQConsumerWorker.<init>(RabbitMQConsumerControl.java:40)
+2016-08-11 10:45:21,688 - INFO - 	at com.yblee.mqcouch.control.RabbitMQConsumerControl.startRabbitMQConsumer(RabbitMQConsumerControl.java:26)
+2016-08-11 10:45:21,688 - INFO - 	at com.yblee.mqcouch.control.AppControl.<init>(AppControl.java:36)
+2016-08-11 10:45:21,688 - INFO - 	at com.yblee.mqcouch.index.MqCouchEmailApp.startApp(MqCouchEmailApp.java:83)
+2016-08-11 10:45:21,688 - INFO - 	at com.yblee.mqcouch.index.MqCouchEmailApp.access$3(MqCouchEmailApp.java:77)
+2016-08-11 10:45:21,688 - INFO - 	at com.yblee.mqcouch.index.MqCouchEmailApp$1$1.run(MqCouchEmailApp.java:59)
+2016-08-11 10:45:21,688 - INFO - 	at java.awt.event.InvocationEvent.dispatch(Unknown Source)
+2016-08-11 10:45:21,688 - INFO - 	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+2016-08-11 10:45:21,688 - INFO - 	at java.awt.EventQueue.access$500(Unknown Source)
+2016-08-11 10:45:21,688 - INFO - 	at java.awt.EventQueue$3.run(Unknown Source)
+2016-08-11 10:45:21,689 - INFO - 	at java.awt.EventQueue$3.run(Unknown Source)
+2016-08-11 10:45:21,689 - INFO - 	at java.security.AccessController.doPrivileged(Native Method)
+2016-08-11 10:45:21,689 - INFO - 	at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
+2016-08-11 10:45:21,689 - INFO - 	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+2016-08-11 10:45:21,689 - INFO - 	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+2016-08-11 10:45:21,689 - INFO - 	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+2016-08-11 10:45:21,689 - INFO - 	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+2016-08-11 10:45:21,689 - INFO - 	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+2016-08-11 10:45:21,689 - INFO - 	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+2016-08-11 10:45:21,689 - INFO - 	at java.awt.EventDispatchThread.run(Unknown Source)
+2016-08-11 10:45:21,689 - INFO - rabbit mq channel create fail
+2016-08-26 16:21:29,911 - INFO - =========== httpClient without cridential
+2016-08-26 16:21:30,277 - INFO - CouchDB listner and publisher worker excuted
+2016-08-26 16:21:30,317 - INFO - host : 127.0.0.1
+2016-08-26 16:21:30,317 - INFO - host : 127.0.0.1
+2018-01-08 14:39:57,679 - INFO - =========== httpClient without cridential
+2018-01-08 14:40:53,204 - INFO - =========== httpClient without cridential
